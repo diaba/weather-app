@@ -8,10 +8,10 @@ const humidity = document.querySelector("#humidity");
 const icon = document.querySelector(".icon");
 
 const URL = "api.openweathermap.org/data/2.5/weather?q=";
-const APIKey = "e0449c7136f994da0fd5775049e4825c";
+const APIKey = "Append_APIKey_Here";
 const fetchWeather = (city) => {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e0449c7136f994da0fd5775049e4825c`
+    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`
   )
     .then((response) => response.json())
     .then((data) => {
